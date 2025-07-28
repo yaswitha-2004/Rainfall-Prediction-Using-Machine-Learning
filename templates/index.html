@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Prediction</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Rainfall Prediction Model</h1>
+        <form action="/predict" method="post">
+            <h4>Input Features:</h4>
+            <label for="jan">January:</label>
+            <input type="text" name="jan" required><br><br>
+            <label for="feb">February:</label>
+            <input type="text" name="feb" required><br><br>
+            <label for="mar">March:</label>
+            <input type="text" name="mar" required><br><br>
+            <label for="apr">April:</label>
+            <input type="text" name="apr" required><br><br>
+            <label for="may">May:</label>
+            <input type="text" name="may" required><br><br>
+            <label for="jun">June:</label>
+            <input type="text" name="jun" required><br><br>
+            <label for="jul">July:</label>
+            <input type="text" name="jul" required><br><br>
+            <label for="aug">August:</label>
+            <input type="text" name="aug" required><br><br>
+            <label for="sep">September:</label>
+            <input type="text" name="sep" required><br><br>
+            <label for="oct">October:</label>
+            <input type="text" name="oct" required><br><br>
+            <label for="nov">November:</label>
+            <input type="text" name="nov" required><br><br>
+            <label for="dec">December:</label>
+            <input type="text" name="dec" required><br><br>
+            <button type="submit">Predict</button>
+        </form>
+        <h2>{{ prediction_text }}</h2> <!-- This displays the prediction result -->
+    </div>
+</body>
+</html>
